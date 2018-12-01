@@ -10,18 +10,10 @@ public class countXX {
 
     int countXX(String str) {
         int count = 0;
-        String xx = "xx";
-        for (int i = 0; i<str.length(); i++){
-            if (str.charAt(i)=='x'){
-                count = count+1;
+        for (int i = 0; i < str.length() - 1; i++) {
+            if (str.substring(i, i + 2).equals("xx")) {
+                count = count + 1;
             }
         }
-        if (count%2==0){
-            return count/2;
-        } else {
-            return (count/2)+1;
-        }
-
+        return count;
     }
-
-}
