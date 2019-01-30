@@ -9,11 +9,11 @@ public class doubleChar {
 //    doubleChar("Hi-There") → "HHii--TThheerree"
 
     public String doubleChar(String str) {
-        String param = "";
+        String word = "";
         for (int i = 0; i<str.length(); i++){
-            param = param+ String.valueOf(str.charAt(i))+ String.valueOf(str.charAt(i));
+            word = word+ String.valueOf(str.charAt(i))+ String.valueOf(str.charAt(i));
         }
-        return param;
+        return word;
     }
 
 }

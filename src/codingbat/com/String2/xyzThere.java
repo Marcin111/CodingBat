@@ -9,8 +9,11 @@ public class xyzThere {
 //    xyzThere("xyz.abc") → true
 
     public boolean xyzThere(String str) {
-        for (int i = 0; i+3<str.length(); i++){
-            if (str.substring(i,i+3).equals("xyz") && str.charAt(i+3)!='.'){
+        if (str.contains("xyz") && !str.contains(".xyz")){
+            return true;
+        }
+        for (int i=str.length();i>=4;i--){
+            if(str.substring(i-3,i).equals("xyz") && str.charAt(i-4)!='.'){
                 return true;
             }
         }

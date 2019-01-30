@@ -9,14 +9,13 @@ public class countHi {
 //    countHi("hihi") → 2
 
     public int countHi(String str) {
-        int a = 0;
+        int count = 0;
         for (int i = 0; i+1<str.length(); i++){
             if(str.substring(i,i+2).equals("hi")){
-                a=a+1;
+                count=count+1;
             }
         }
-        return a;
+        return count;
     }
-
 
 }
