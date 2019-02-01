@@ -1,0 +1,18 @@
+package codingbat.com.Functional1;
+
+import java.util.List;
+
+public class addStar {
+
+//    Given a list of strings, return a list where each string has "*" added at its end.
+//
+//    addStar(["a", "bb", "ccc"]) → ["a*", "bb*", "ccc*"]
+//    addStar(["hello", "there"]) → ["hello*", "there*"]
+//    addStar(["*"]) → ["**"]
+
+    public List<String> addStar(List<String> strings) {
+        strings.replaceAll(n->n+"*");
+        return strings;
+    }
+
+}
