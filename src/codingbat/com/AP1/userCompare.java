@@ -8,4 +8,16 @@ public class userCompare {
 //    userCompare("bb", 1, "aa", 2) → 1
 //    userCompare("bb", 1, "bb", 1) → 0
 
+    public int userCompare(String aName, int aId, String bName, int bId) {
+        if(aName.compareTo(bName) < 0) {
+            return -1;
+        } else if(aName.compareTo(bName) > 0) {
+            return 1;
+        } else if(aId < bId) {
+            return -1;
+        } else if(aId > bId) {
+            return 1;
+        }
+        return 0;
+    }
 }
