@@ -1,4 +1,4 @@
-package codingbat.com.Recursion1;
+package codingbat.com.Recursion2;
 
 public class groupSum {
 
